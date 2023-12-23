@@ -1,0 +1,126 @@
+<mxfile host="Electron" modified="2023-12-20T02:58:38.770Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.11 Chrome/114.0.5735.289 Electron/25.9.8 Safari/537.36" etag="aY2nGc3tHqhShs0co8Cw" version="22.1.11" type="device">
+  <diagram name="Page-1" id="V2mFMcUaiH6hN8hfHCOJ">
+    <mxGraphModel dx="954" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-37" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="290" y="650" width="160" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-1" value="Yelp" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="110" y="80" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;b&gt;Requirements&lt;br&gt;&lt;br&gt;Functional&lt;br&gt;- &lt;/b&gt;Search for a restaurant in a location by proximity&lt;br&gt;- View&amp;nbsp;&lt;br&gt;- Post a restaurant&lt;br&gt;- Post a comment&lt;br&gt;- Like/Dislike a restaurant&lt;br&gt;&lt;br&gt;&lt;b&gt;Non-Functional&lt;br&gt;&lt;/b&gt;- Latency&lt;br&gt;- Accurate for distance from your locations&lt;br&gt;- &lt;i&gt;Scalable&lt;/i&gt;&lt;br&gt;- Eventual Consistency&lt;br&gt;&lt;/font&gt;&lt;blockquote style=&quot;margin: 0 0 0 40px; border: none; padding: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- Durability&lt;/font&gt;&lt;/blockquote&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;br&gt;&lt;b&gt;Constraints&lt;/b&gt;&lt;br&gt;- &lt;i style=&quot;&quot;&gt;Time to market&lt;/i&gt;&lt;br&gt;- &lt;i&gt;Budget&lt;/i&gt;&lt;br&gt;- Quality - Improve as we go along&lt;br&gt;- Resources - Talent&lt;br&gt;&lt;br&gt;&lt;b&gt;Assumptions&lt;br&gt;&lt;/b&gt;- 10 Million Restaurants&lt;br&gt;- 50 Million DAU&lt;br&gt;- Total Users: 500 Million&lt;br&gt;- Read Heavy 1 Write: 1000 Readers&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="210" width="290" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-3" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="690" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-4" value="Read" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="690" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-5" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="700" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-6" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-7" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Restaurants&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- id&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- title&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- description&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- pictures&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- video&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- menu&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- lat/long&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- GEOCODE&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 500 MB per restaurant&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 5000 GB - 5 TB&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- &lt;i&gt;Storage is not very large&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;&lt;br&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;User&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- ID&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- username&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- email&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- hashed password&amp;nbsp;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- profile picture&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- 1 MB&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;i&gt;- 50 GB&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="140" width="200" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-11" value="Restaurants" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="690" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-12" value="Users" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="790" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.95;exitY=-0.067;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sa0z8poPM_SEIQsRXYF3-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="770" as="sourcePoint" />
+            <mxPoint x="280" y="719" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-15" value="MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="530" y="690" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-17" value="Object Stora" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="530" y="790" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-24" value="Write" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1010" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-28" value="Elastic Search" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="310" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-29" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="1040" as="sourcePoint" />
+            <mxPoint x="290" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-48" value="ReDIS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sa0z8poPM_SEIQsRXYF3-29">
+          <mxGeometry x="0.4696" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-30" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="725" width="70" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-31" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="450" y="825" width="70" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-32" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;left=0;right=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="440" y="1000" width="120" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-33" value="Proximity&lt;br&gt;Service" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="880" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-36" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.367;exitY=-0.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="sa0z8poPM_SEIQsRXYF3-28" target="sa0z8poPM_SEIQsRXYF3-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="780" as="sourcePoint" />
+            <mxPoint x="490" y="730" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-40" value="Like/Dislike" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1120" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-41" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-43" value="Comments" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1210" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-45" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Optimizations&lt;/b&gt;&lt;br&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;font-weight: bold; background-color: initial;&quot;&gt;- &lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;LB&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- REDIS&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- SHARDING BY LOCATION&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- REPLICATION&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- CDN&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left; font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="460" width="150" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-46" value="MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="610" y="640" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-47" value="MySQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="620" y="735" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-49" value="GRAPH" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="530" y="890" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-50" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.431;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="sa0z8poPM_SEIQsRXYF3-37" target="sa0z8poPM_SEIQsRXYF3-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="950" as="sourcePoint" />
+            <mxPoint x="510" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-51" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1020" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-52" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sa0z8poPM_SEIQsRXYF3-53" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
