@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net" modified="2023-10-24T18:33:11.020Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="FvDcNOCfrT5R_un-bIWv" version="22.0.7" type="device">
+  <diagram name="Page-1" id="mLeFSXAgJCSnAv3vwaBY">
+    <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-1" value="Proximity Service" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="30" y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-2" value="&lt;h1&gt;Requirements&lt;/h1&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Functional&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Search for the business close to the user&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Perform CRUD operations on the businesses&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Non-Functional&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Available&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- Low latency (results appear quickly)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- New businesses don&#39;t need to be part of the feed immediately (consistency low)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Assumptions&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- 500 M users&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- 100 M DAU. Each user makes 5 queries per day&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- 500 * 10^6 / 100,000 = 5000 QPS&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- 200 M Business that use our system&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;API Design&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- REST GET /v1/nearby(lat, long, (radius))&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;JSON&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;{&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Total: 10,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;Businesses: {&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;[Businesses]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;}&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;}&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Should include pagination # of results, offset - to keep simple we&#39;ll ignore this for now&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Business - CRUD&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;POST /v1/business&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;{&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;name text,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Lat float,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Log float,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;description text,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;picture(s) jpg,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;video(s)&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;}&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;JSON 200 response&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;business_id,&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;other fields&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;GET /v1/business/:id&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;JSON&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;id,&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;[picture_URLs],&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;[video_URLs]&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;PUT/PATCH /v1/business/:id&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;{&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;businessid,&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;name text,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;Lat float,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;Log float,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;description text,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;picture(s) jpg,&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;video(s)&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;}&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;DELETE /v1/business/:id&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;{:id}&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;JSON&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;STORAGE&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Business Resource&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;businessid, 80 bytes&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;name text, &amp;nbsp;160 BYTES&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;Lat float, &amp;nbsp; &amp;nbsp; 32 BYTES&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;Log float, &amp;nbsp; &amp;nbsp;32 BYTES&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;description text 200 BYTES&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;border-color: var(--border-color);&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="44" y="111" width="796" height="1439" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-4" value="HIGH LEVEL DESIGN" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1600" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-5" value="CLIENT APP" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-6" value="Load Balancer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-7" value="Proximity Service&lt;br&gt;/v1/nearby" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-8" value="Business Service (CRUD)" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1750" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-9" value="APPLICATION LAYER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-10" value="DB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1860" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-11" value="PERSISTENCE LAYER" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="535" y="1540" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-13" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-5" target="VwWKjOFvg8jTOEFy1-Ql-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1670" as="sourcePoint" />
+            <mxPoint x="500" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-14" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-6" target="VwWKjOFvg8jTOEFy1-Ql-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="150" y="1720" as="sourcePoint" />
+            <mxPoint x="200" y="1720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-15" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.037;entryY=0.588;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-6" target="VwWKjOFvg8jTOEFy1-Ql-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1670" as="sourcePoint" />
+            <mxPoint x="500" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-16" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-8" target="VwWKjOFvg8jTOEFy1-Ql-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1670" as="sourcePoint" />
+            <mxPoint x="500" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-17" value="Writes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VwWKjOFvg8jTOEFy1-Ql-16">
+          <mxGeometry x="-0.0444" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-20" value="Replicas" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1575" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-21" value="Replicas" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1660" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-22" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="VwWKjOFvg8jTOEFy1-Ql-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="1640" as="sourcePoint" />
+            <mxPoint x="520" y="1640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-24" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-7" target="VwWKjOFvg8jTOEFy1-Ql-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="1670" as="sourcePoint" />
+            <mxPoint x="500" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-25" value="BLOB" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1950" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-26" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-8" target="VwWKjOFvg8jTOEFy1-Ql-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1770" as="sourcePoint" />
+            <mxPoint x="490" y="1720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-27" value="PICTURES, VIDEOS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="530" y="1938" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-28" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0;entryDx=0;entryDy=52.5;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-10" target="VwWKjOFvg8jTOEFy1-Ql-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1680" as="sourcePoint" />
+            <mxPoint x="490" y="1630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="690" y="1750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-10" target="VwWKjOFvg8jTOEFy1-Ql-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="1680" as="sourcePoint" />
+            <mxPoint x="490" y="1630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="1760" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-30" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;GEOCODE TABLE&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- BUSINESS ID&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;- GEOCODE&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="1340" width="190" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-31" value="&lt;h1&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;OPTIONS&lt;/font&gt;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;- REDIS&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 14px;&quot;&gt;- GOOGLE S2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;LATITUDE AND LONGITUDE TO A GEOCODE LIBRARIES&lt;/div&gt;&lt;div&gt;- HASH&lt;/div&gt;&lt;div&gt;- TREE&lt;/div&gt;&lt;div&gt;&amp;nbsp;6 BYTE DESCRIPTION OF LAT, LONG&lt;/div&gt;&lt;div&gt;PROVIDE ALSO SURROUNDING GEOCODES&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1968" width="200" height="222" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-32" value="REVIEWS LIKES &lt;br&gt;COMMENTS" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1680" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-33" value="NOSQL" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="580" y="1760" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-34" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-32" target="VwWKjOFvg8jTOEFy1-Ql-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1840" as="sourcePoint" />
+            <mxPoint x="460" y="1790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-35" value="&lt;h1&gt;10X GROWTH&lt;/h1&gt;&lt;p&gt;- CACHING&lt;/p&gt;&lt;p&gt;- DB SHARDING&lt;/p&gt;&lt;p&gt;- CDN&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2240" width="190" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-36" value="CDN" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-37" value="CACHING SERVICE" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1830" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-39" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="VwWKjOFvg8jTOEFy1-Ql-37">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="1990" as="sourcePoint" />
+            <mxPoint x="460" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-37" target="VwWKjOFvg8jTOEFy1-Ql-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1870" as="sourcePoint" />
+            <mxPoint x="460" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VwWKjOFvg8jTOEFy1-Ql-41" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="VwWKjOFvg8jTOEFy1-Ql-36" target="VwWKjOFvg8jTOEFy1-Ql-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="1870" as="sourcePoint" />
+            <mxPoint x="460" y="1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
