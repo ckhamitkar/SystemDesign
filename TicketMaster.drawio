@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-27T20:36:06.779Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="6qriYIzjwigUpaW3iXrm" version="22.0.8" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-27T20:25:35.845Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="iq2513ZttuLZMQrOi0Dq" version="22.0.8" type="device">
   <diagram name="Page-1" id="u76wDM2hZAYBNvkX0Yjf">
     <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -86,10 +86,10 @@
           <mxGeometry x="710" y="1380" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8BunqAhMfIGNklcZEyUK-48" value="Reads" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="710" y="1570" width="60" height="80" as="geometry" />
+          <mxGeometry x="710" y="1640" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8BunqAhMfIGNklcZEyUK-49" value="Reads" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
-          <mxGeometry x="710" y="1470" width="60" height="80" as="geometry" />
+          <mxGeometry x="710" y="1520" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="8BunqAhMfIGNklcZEyUK-50" value="Persistence Layer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="660" y="1290" width="150" height="30" as="geometry" />
@@ -176,9 +176,6 @@
         </mxCell>
         <mxCell id="8BunqAhMfIGNklcZEyUK-73" value="3rd" style="shape=tapeData;whiteSpace=wrap;html=1;perimeter=ellipsePerimeter;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="480" y="1360" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="8BunqAhMfIGNklcZEyUK-74" value="Blob &lt;br&gt;Storage" style="shape=dataStorage;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="690" y="1670" width="100" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

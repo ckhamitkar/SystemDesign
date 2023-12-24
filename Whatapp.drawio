@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-28T22:33:26.364Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="3dBXIU798lOFg3oXBH6O" version="22.0.8" type="device">
+<mxfile host="app.diagrams.net" modified="2023-10-28T22:29:22.253Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15" etag="dhGo7jkQLRj47Fo34qmS" version="22.0.8" type="device">
   <diagram name="Page-1" id="htFCysOncU4eErCBTmEX">
     <mxGraphModel dx="954" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -37,7 +37,7 @@
         <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-18" value="Low Latency" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="RxtHRBdmFdkH2Ec5A_Ft-13">
           <mxGeometry y="90" width="490" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-16" value="Security&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="RxtHRBdmFdkH2Ec5A_Ft-13">
+        <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-16" value="Availability&lt;br&gt;Security&lt;br&gt;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="RxtHRBdmFdkH2Ec5A_Ft-13">
           <mxGeometry y="120" width="490" height="60" as="geometry" />
         </mxCell>
         <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="RxtHRBdmFdkH2Ec5A_Ft-13" source="RxtHRBdmFdkH2Ec5A_Ft-15" target="RxtHRBdmFdkH2Ec5A_Ft-15">
@@ -115,20 +115,10 @@
             <mxPoint x="440" y="1050" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-62" value="Websockets" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RxtHRBdmFdkH2Ec5A_Ft-50">
-          <mxGeometry x="-0.0189" y="1" relative="1" as="geometry">
-            <mxPoint x="5" y="16" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-51" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="RxtHRBdmFdkH2Ec5A_Ft-37">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="390" y="1100" as="sourcePoint" />
             <mxPoint x="210" y="1210" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-63" value="Websockets" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="RxtHRBdmFdkH2Ec5A_Ft-51">
-          <mxGeometry x="0.0698" relative="1" as="geometry">
-            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-52" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.419;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="RxtHRBdmFdkH2Ec5A_Ft-40" target="RxtHRBdmFdkH2Ec5A_Ft-41">
@@ -175,9 +165,6 @@
             <mxPoint x="390" y="1270" as="sourcePoint" />
             <mxPoint x="440" y="1220" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="RxtHRBdmFdkH2Ec5A_Ft-64" value="Monitoring/Logging" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="80" y="1420" width="740" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
